@@ -15,7 +15,7 @@
 
     <div class="content"> 
 
-     <h2>Sign In</h2> 
+     <h2>Se connecter</h2> 
 
      <div class="form"> 
 
@@ -31,7 +31,7 @@
 
       </div> 
 
-      <div class="links"> <a href="#">Forgot Password</a> <a href="#">Signup</a> 
+      <div class="links"> <a href="#">Forgot Password</a> <a href="<%= request.getContextPath() %>/signup">S'inscrire</a> 
 
       </div> 
 

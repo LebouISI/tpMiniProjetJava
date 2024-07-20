@@ -15,33 +15,33 @@
 
     <div class="content"> 
 
-     <h2>Sign In</h2> 
+     <h2>Authentification</h2> 
 
-     <div class="form"> 
-
-      <div class="inputBox"> 
-
-       <input type="text" required> <i>Username</i> 
-
-      </div> 
+     <form class="form" action="login" method="POST"> 
 
       <div class="inputBox"> 
 
-       <input type="password" required> <i>Password</i> 
-
-      </div> 
-
-      <div class="links"> <a href="#">Forgot Password</a> <a href="#">Signup</a> 
+       <input type="email" name="username" required> <i>Email</i> 
 
       </div> 
 
       <div class="inputBox"> 
 
-       <input type="submit" value="Login"> 
+       <input type="password" name="password" required> <i>Password</i> 
 
       </div> 
 
-     </div> 
+      <div class="links"> <a href="#">Mot de passe oublié</a> <a href="<%= request.getContextPath() %>/signup">S'inscrire</a> 
+
+      </div> 
+
+      <div class="inputBox"> 
+
+       <input type="submit" value="Se connecter"> 
+
+      </div> 
+
+     </form> 
 
     </div> 
 
